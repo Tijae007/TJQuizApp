@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>QuizApp</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+	<div>
+		<h3 class="bg-danger text-light">Quiz Application</h3>
+		<hr>	
+	</div>
+	<br>
+	<br>
+
+	<div>
+			<h3 class="top">TJ'S QUIZ</h3>
+			<hr>
+	</div>
+
+	<p id="questionNum" class="badge badge-warning"><div id="timer" class="badge badge-success float-right"></div> </p>
+	<br>
+
+	<div id="container">
+		
+
+		<div id="content">
+			<h2 id="questionContainer" class="que bg-info text-white p-3"></h2>
+
+			<div class="container">
+				<div class="row">
+					<p class="col-md-5 bg-success p-3 ml-5 mr-3" id="optionAContainer" class="opt"></p>
+					<p class="col-md-5 bg-success p-3 ml-5 mr-3" id="optionBContainer" class="opt"></p>
+					<p class="col-md-5 bg-success p-3 ml-5 mr-3" id="optionCContainer" class="opt"></p>
+					<p class="col-md-5 bg-success p-3 ml-5 mr-3" id="optionDContainer" class="opt"></p>
+				</div>
+				<br>
+				<br>
+			<!-- 	<p><input type="prev" onclick="checkAnswer()" name="" class="prevButton"></p>
+				<p><input type="next" onclick="checkAnswer()" name="" class="nextButton"></p> -->
+				<button onclick="prevQuestion()" name="" id="prevButton" class="btn btn-info">Prev</button>
+				<button onclick="checkAnswer()" name="" id="nextButton" class=" btn btn-info float-right" value="0">Next</button>
+			</div>
+		</div>
+		<hr>
+	</div>
+
+
+	
+	<!-- bootstrap js plus js-->
+	<script type="text/javascript" src="script.js"></script>
+	<script type="text/javascript" src="js/jquery-3.3.1.slim.min.js"></script>
+	<script type="text/javascript" src="js/popper.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	
+</body>
+</html>
